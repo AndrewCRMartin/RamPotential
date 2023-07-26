@@ -1,0 +1,216 @@
+The parameter file 'RAM.gen.par' has the following format:
+
+18 (N+1)x(N+1) matrices, one for each of the 18 distance ranges.
+N is the number of group types as listed below, 167 in this case.
+
+Each line in the file begins with a double index in the form 'd-t'.
+'d' indicates the distance bin (index range 0 - 17), 't' indicates
+the group type (index range 0 - 167). Type index 0 denotes the
+average between group 't' and all other groups (and should
+generally be ignored). See detailed index lists below.
+
+File 'bins_RAM.c' contains a C routines for conversion of indices 
+into explicit distance bins and group types.
+For C code to read the parameter files contact Ram Samudrala
+(ram@iris3.carb.nist.gov).
+
+======================================================================
+distance bin index list
+
+ dist  index
+ [A]
+
+ 0- 3   0
+ 3- 4   1
+ 4- 5   2
+ 5- 6   3
+ 6- 7   4
+ 7- 8   5
+ 8- 9   6
+ 9-10   7
+10-11   8
+11-12   9
+12-13  10
+13-14  11
+14-15  12
+15-16  13
+16-17  14
+17-18  15
+18-19  16
+19-20  17
+
+======================================================================
+group type index list
+
+group  index
+type
+-------------
+average 0 
+
+AN      1
+ACA     2
+AC      3
+AO      4
+ACB     5
+CN      6
+CCA     7
+CC      8
+CO      9
+CCB    10
+CSG    11
+DN     12
+DCA    13
+DC     14
+DO     15
+DCB    16
+DCG    17
+DOD1   18
+DOD2   19
+EN     20
+ECA    21
+EC     22
+EO     23
+ECB    24
+ECG    25
+ECD    26
+EOE1   27
+EOE2   28
+FN     29
+FCA    30
+FC     31
+FO     32
+FCB    33
+FCG    34
+FCD1   35
+FCD2   36
+FCE1   37
+FCE2   38
+FCZ    39
+GN     40
+GCA    41
+GC     42
+GO     43
+HN     44
+HCA    45
+HC     46
+HO     47
+HCB    48
+HCG    49
+HND1   50
+HCD2   51
+HCE1   52
+HNE2   53
+IN     54
+ICA    55
+IC     56
+IO     57
+ICB    58
+ICG1   59
+ICG2   60
+ICD1   61
+KN     62
+KCA    63
+KC     64
+KO     65
+KCB    66
+KCG    67
+KCD    68
+KCE    69
+KNZ    70
+LN     71
+LCA    72
+LC     73
+LO     74
+LCB    75
+LCG    76
+LCD1   77
+LCD2   78
+MN     79
+MCA    80
+MC     81
+MO     82
+MCB    83
+MCG    84
+MSD    85
+MCE    86
+NN     87
+NCA    88
+NC     89
+NO     90
+NCB    91
+NCG    92
+NOD1   93
+NND2   94
+PN     95
+PCA    96
+PC     97
+PO     98
+PCB    99
+PCG   100
+PCD   101
+QN    102
+QCA   103
+QC    104
+QO    105
+QCB   106
+QCG   107
+QCD   108
+QOE1  109
+QNE2  110
+RN    111
+RCA   112
+RC    113
+RO    114
+RCB   115
+RCG   116
+RCD   117
+RNE   118
+RCZ   119
+RNH1  120
+RNH2  121
+SN    122
+SCA   123
+SC    124
+SO    125
+SCB   126
+SOG   127
+TN    128
+TCA   129
+TC    130
+TO    131
+TCB   132
+TOG1  133
+TCG2  134
+VN    135
+VCA   136
+VC    137
+VO    138
+VCB   139
+VCG1  140
+VCG2  141
+WN    142
+WCA   143
+WC    144
+WO    145
+WCB   146
+WCG   147
+WCD1  148
+WCD2  149
+WNE1  150
+WCE2  151
+WCE3  152
+WCZ2  153
+WCZ3  154
+WCH2  155
+YN    156
+YCA   157
+YC    158
+YO    159
+YCB   160
+YCG   161
+YCD1  162
+YCD2  163
+YCE1  164
+YCE2  165
+YCZ   166
+YOH   167
